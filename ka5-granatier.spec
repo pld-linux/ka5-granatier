@@ -1,15 +1,15 @@
-%define		kdeappsver	19.04.1
+%define		kdeappsver	20.12.3
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		granatier
 Summary:	Granatier
 Name:		ka5-%{kaname}
-Version:	19.04.1
+Version:	20.12.3
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
-Source0:	http://download.kde.org/stable/applications/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	2dc751b2db375b189167c1aa964f24d8
+Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
+# Source0-md5:	8cb4ac76cf93cb0cd44fb4d523878400
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
@@ -67,7 +67,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{kaname}.lang
 %defattr(644,root,root,755)
-/etc/xdg/granatier.categories
 %attr(755,root,root) %{_bindir}/granatier
 %{_desktopdir}/org.kde.granatier.desktop
 %{_datadir}/config.kcfg/granatier.kcfg
@@ -81,3 +80,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/kxmlgui5/granatier
 %{_datadir}/kxmlgui5/granatier/granatierui.rc
 %{_datadir}/metainfo/org.kde.granatier.appdata.xml
+%{_datadir}/qlogging-categories5/granatier.categories

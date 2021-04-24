@@ -1,15 +1,15 @@
-%define		kdeappsver	20.12.3
+%define		kdeappsver	21.04.0
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		granatier
 Summary:	Granatier
 Name:		ka5-%{kaname}
-Version:	20.12.3
+Version:	21.04.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	8cb4ac76cf93cb0cd44fb4d523878400
+# Source0-md5:	c9bc325e2f03406eee0d12860497e441
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
@@ -77,7 +77,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/32x32/apps/granatier.png
 %{_iconsdir}/hicolor/48x48/apps/granatier.png
 %{_iconsdir}/hicolor/64x64/apps/granatier.png
-%dir %{_datadir}/kxmlgui5/granatier
-%{_datadir}/kxmlgui5/granatier/granatierui.rc
 %{_datadir}/metainfo/org.kde.granatier.appdata.xml
 %{_datadir}/qlogging-categories5/granatier.categories

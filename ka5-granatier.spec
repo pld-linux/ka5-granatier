@@ -43,6 +43,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Granatier is a clone of the classic Bomberman game, inspired by the
 work of the Clanbomber clone.
 
+%description -l pl.UTF-8
+Granatier jest klonem klasycznej gry Bomberman, inspirowanym
+przez działanie klona Clanbombera.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
